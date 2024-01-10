@@ -1,10 +1,16 @@
+<script setup>
+import {ref} from "vue";
+const count = ref(0);
+</script>
+
+
 <template>
   <main>
    <div>
      <h4>the current count is...</h4>
-     <h1>0</h1>
-     <button>-</button>
-     <button>+</button>
+     <h1>{{count}}</h1>
+     <button @click="count--">-</button>
+     <button @click="count++">+</button>
    </div>
   </main>
 </template> 
